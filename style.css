@@ -6,6 +6,10 @@
     width: 30px;
 }
 
+.icon3{
+    width: 20px;
+}
+
 div.repo p, h3{
     display: inline;
 }

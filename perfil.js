@@ -52,13 +52,15 @@ function repositoriosGithub(){
                     <div class="card">
                         <div class="card-body justify-content-between">
                             <h5 class="card-title">${repositorio.name}</h5>
-                            <p class="card-text">${repositorio.description}</p>
+                            <p class="card-text">${repositorio.description || "Repositório sem descrição"}</p>
                             <a href="repo.html?repo=${repositorio.name}" class="btn btn-primary mb-2">Acessar Repositório</a>
                             <div class="card-footer d-flex justify-content-between">
                                 <span>
+                                    <img class="icon2 float-sm-end mx-3" src="img/estrela.png" alt="icone de estrela">
                                     <i class="bi bi-star-fill"></i> ${repositorio.stargazers_count}
                                 </span>
                                 <span>
+                                    <img class="icon2 float-sm-end mx-3" src="img/user.png" alt="icone de acessos">
                                     <i class="bi bi-eye-fill"></i> ${repositorio.watchers_count}
                                 </span>
                             </div>
@@ -67,7 +69,7 @@ function repositoriosGithub(){
                 </div>`  
             })
 
-            document.getElementById('repositorios').innerHTML = repositorios;
+            document.getElementById('Repositorios').innerHTML = repositorios;
         })
 }
 
