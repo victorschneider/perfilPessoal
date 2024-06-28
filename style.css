@@ -1,0 +1,16 @@
+.icon{
+    width: 40px;
+}
+
+.icon2{
+    width: 30px;
+}
+
+div.repo p, h3{
+    display: inline;
+}
+
+div.container{
+    box-sizing: border-box;
+    min-width: 95%;
+}
