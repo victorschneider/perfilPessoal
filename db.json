@@ -6,5 +6,59 @@
             "imagem_url": "",
             "url": "" 
         }
+    ],
+
+    "perfilPessoal": {
+        "name": "Victor Schneider do Vale",
+        "avatar_url": "img/user.png",
+        "bio": "estudante de informática",
+        "location": "Contagem/MG",
+        "followers": 10
+    },
+
+    "repos": [
+        {
+            "id": 0,
+            "name": "Uaijobs",
+            "description": "programa maneiro",
+            "stargazers_count": 15,
+            "watchers_count": 180,
+            "language": "JavaScript",
+            "created_at": "04-10-2024",
+            "forks_count": 12
+        },
+        {
+            "id": 1,
+            "name": "Site Pessoal",
+            "description": "Site pessoal para escola",
+            "stargazers_count": 20,
+            "watchers_count": 264,
+            "language": "HTML",
+            "created_at": "04-10-2024",
+            "forks_count": 15
+
+        },
+        {
+            "id": 2,
+            "name": "Perfil Pessoal",
+            "description": "Página de perfil para a PUC (Essa página)",
+            "stargazers_count": 3,
+            "watchers_count": 46,
+            "language": "JavaScript",
+            "created_at": "04-10-2024",
+            "forks_count": 6
+
+        },
+        {
+            "id": 3,
+            "name": "KittenHeaven",
+            "description": "Jogo no Godot",
+            "stargazers_count": 150,
+            "watchers_count": 10,
+            "language": "Phyton",
+            "created_at": "04-10-2024",
+            "forks_count": 23
+
+        }
     ]
 }

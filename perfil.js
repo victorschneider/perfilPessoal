@@ -1,8 +1,9 @@
 const URL_perfil = 'https://api.github.com/users/victorschneider'
 const URL_perfil_base = 'https://api.github.com/users'
+const URL_JSON_SERVER = 'http://localhost:3000'
 
 function montaPerfil(){
-    fetch(URL_perfil)
+    fetch(`http://localhost:3000/perfilPessoal`)
         .then(res => res.json())
         .then(dados => {
             const perfil = 
@@ -24,12 +25,13 @@ function montaPerfil(){
                     </div>
 
                     <div class="w-100">
+                        
                         <a href="https://www.instagram.com/schinasx/"><img src="img/instagram.png" alt="Icon Instagram"
-                                class="icon mx-3"></a>
-                        <a href="https://twitter.com/schinas16"><img src="img/twitter.png" alt="Icon X"
-                                class="icon mx-3"></a>
-                        <a href="https://www.linkedin.com/in/victor-schneider-do-vale-2b782a206/"><img
-                                src="img/linkedin.png" alt="Icon Linkedin" class="icon mx-3"><a>
+                        class="icon mx-3"></i></a>
+                        <a href="https://twitter.com/schinas16"><img src="img/twitter.png" alt="Icon Instagram"
+                        class="icon mx-3"></a>
+                        <a href="https://www.linkedin.com/in/victor-schneider-do-vale-2b782a206/"><img src="img/linkedin.png" alt="Icon Instagram"
+                        class="icon mx-3"><a>
 
                         <img class="icon float-sm-end mx-3" src="img/user.png" alt="Icon views" >
                         <h2 class="float-sm-end">${dados.followers}</h2>
@@ -37,12 +39,13 @@ function montaPerfil(){
                 </div>
             </div>`
 
-            document.getElementById('perfilPessoal').innerHTML = perfil;
+            document.getElementById('perfil').innerHTML += perfil;
+            console.log(dados)
         })
 }
 
 function repositoriosGithub(){
-    fetch(`${URL_perfil}/repos`)
+    fetch(`${URL_JSON_SERVER}/repos`)
         .then(res => res.json())
         .then(dados => {
             let repositorios = ''
@@ -53,7 +56,7 @@ function repositoriosGithub(){
                         <div class="card-body justify-content-between">
                             <h5 class="card-title">${repositorio.name}</h5>
                             <p class="card-text">${repositorio.description || "Repositório sem descrição"}</p>
-                            <a href="repo.html?repo=${repositorio.name}" class="btn btn-primary mb-2">Acessar Repositório</a>
+                            <a href="repo.html?repo=${repositorio.id}" class="btn btn-primary mb-2">Acessar Repositório</a>
                             <div class="card-footer d-flex justify-content-between">
                                 <span>
                                     <img class="icon2 float-sm-end mx-3" src="img/estrela.png" alt="icone de estrela">
@@ -82,7 +85,7 @@ function exibeColegas(){
         'ieiou',
         'biguigas',
         'AndryMarques',
-        'PratesVitor',
+        'PratesVitor'
     ]
 
     let colegasDiv = ''
@@ -112,5 +115,5 @@ function exibeColegas(){
 
 montaPerfil()
 repositoriosGithub()
-exibeColegas()
+// exibeColegas()
 

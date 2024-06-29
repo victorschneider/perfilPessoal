@@ -1,11 +1,17 @@
 const urlParams = new URLSearchParams(window.location.search);
 const nomeRepositorio = urlParams.get('repo');
+const URL_JSON_SERVER = 'http://localhost:3000'
 
 function montaPaginaRepo(){
 
-    fetch(`https://api.github.com/repos/victorschneider/${nomeRepositorio}`)
+    fetch(`http://localhost:3000/repos/${nomeRepositorio}`)
         .then(res => res.json())
         .then(repositorio => {
+            let topicosDiv = ""
+            repositoriosGithub.topics.forEach(topico => {
+
+                topicosDiv += `<button class="btn btn-primary m-1" type="submit">${topico}</button`
+            })
             
             let conteudoDiv = 
             `
@@ -30,10 +36,7 @@ function montaPaginaRepo(){
                     
                     <div class="w-100">
                         <p class="mx-5">
-                            <button class="btn btn-primary m-1" type="submit">${repositorio.topics.join(', ')}</button>
-                            <button class="btn btn-primary m-1" type="submit">.CSS</button>
-                            <button class="btn btn-primary m-1" type="submit">JavaScript</button>
-                            <button class="btn btn-primary m-1" type="submit">PUC-Minas</button>
+                            ${topicosDiv}
                         </p>   
                         <img class="icon float-sm-end mx-3" src="img/user.png" alt="icone de acessos">
                         <h2 class="float-sm-end"> ${repositorio.watchers_count}</h2>
