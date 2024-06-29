@@ -1,10 +1,41 @@
 {
     "noticias": [
         {
-            "titulo": "bla bla bla",
-            "metaDescricao": "",
-            "imagem_url": "",
-            "url": "" 
+            "titulo": "Programação WEB",
+            "metaDescricao": "Conheça as 3 principais linguagens presentes na WEB! Entenda como são criados esse e outros sites que você acessa diariamente!",
+            "imagem_url": "img/sugerido/web.png",
+            "url": "https://blog.eseg.edu.br/o-que-e-programacao-web/" 
+        },
+        {
+            "titulo": "C, C++ e C#",
+            "metaDescricao": "Conheça as tríplice do C! Saiba a utilidade dessas linguagens de programação tão comuns e se aventure no mundo do COMPUTAÇÃO!",
+            "imagem_url": "img/sugerido/dotnet.jpg",
+            "url": "https://www.alura.com.br/artigos/linguagens-c-c-qual-diferenca-entre-elas" 
+        },
+        {
+            "titulo": "Java",
+            "metaDescricao": "Vai uma xícara de café?!? Leia a história por trás de uma das linguagens de programações mais famosas do mundo: o JAVA!",
+            "imagem_url": "img/sugerido/java.jpg",
+            "url": "https://giulianabezerra.medium.com/uma-breve-historia-do-java-f58d1761154" 
+        },
+        {
+            "titulo": "Pacote Office",
+            "metaDescricao": "Aprenda novos recuros para as plataformas de edição mais utilizadas do mundo: Word, Excel e PowerPoint!",
+            "imagem_url": "img/sugerido/office.jpg",
+            "url": "https://blog.algartelecom.com.br/para-voce/o-que-e-o-pacote-office/" 
+        },
+        {
+            "titulo": "SQL e Banco de Dados",
+            "metaDescricao": "SELECT SITE_LEGAL... Um código SQL? Não! Mas é um link completo com informações sobre SQL e DataBase! CONFIRA!",
+            "imagem_url": "img/sugerido/sql.png",
+            "url": "https://www.alura.com.br/artigos/o-que-e-sql" 
+        },
+        {
+            "titulo": "Sistema Operacional Windows",
+            "metaDescricao": "Confira uma série de atalhos desconhecidos no famoso Windows! Saiba como otimizar seu uso pessoal!",
+            "imagem_url": "img/sugerido/windows.jpg",
+            "url": "https://www.meupositivo.com.br/doseujeito/dicas/melhores-atalhos-para-windows-10/" 
         }
+
     ]
 }

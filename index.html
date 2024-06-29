@@ -45,29 +45,28 @@
         <div class="border-bottom border-secondary-subtle border-3 mx-5 my-0">
             <h1>Habilidades e Linguagens Conhecidas</h1>
         </div>
+
         <div class="bg-primary py-1 m-5" id="Noticias">
             <div id="carousel" class="carousel slide w-75 container text-center my-5">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
-                        aria-current="true"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="4"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="5"></button>
+
+                <div class="carousel-indicators" id="btnCarrossel">
+                </div>
+            
+                <div class="carousel-inner w-50" id="infoCarrossel">
+                    
                 </div>
 
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev" id="btnEsquerdaCarrossel">
+                    <span class="iconeCarrossel">
+                        <span class="carousel-control-prev-icon"  aria-hidden="true"></span>
+                    </span>                
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next" id="btnDireitaCarrossel">
+                    <span class="iconeCarrossel">
+                        <span class="carousel-control-next-icon"  aria-hidden="true"></span>
+                    </span>
+                </button>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
             </div>
         </div>
 
