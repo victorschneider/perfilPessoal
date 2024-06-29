@@ -30,7 +30,7 @@ div.container{
 
 
 #infoCarrossel{
-    left: 25%;
+    left: 12.5%;
 }
 
 #btnEsquerdaCarrossel{
@@ -47,4 +47,8 @@ div.container{
 
 .iconeCarrossel:hover{
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media screen {
+    
 }

@@ -75,6 +75,10 @@ function repositoriosGithub(){
                                         <img class="icon2 float-sm-end mx-3" src="img/user.png" alt="icone de acessos">
                                         <i class="bi bi-eye-fill"></i> ${repositorio.watchers_count}
                                     </span>
+                                    <span>
+                                        <img class="icon2 float-sm-end mx-3" src="img/fork.png" alt="icone de forks">
+                                        <i class="bi bi-eye-fill"></i> ${repositorio.forks_count}
+                                    </span>
                             </div>
                             <div class="card-body justify-content-between">
                                 <h5 class="card-title">${repositorio.name}</h5>
