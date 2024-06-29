@@ -115,12 +115,12 @@ function exibeColegas(){
                             <div class="card-body">
                                 <h5 class="card-title">${dados.name}</h5>
                                 <p class="card-text">${dados.bio}</p>
+                                <a href="${dados.html_url}" class="btn btn-primary">Acessar perfil</a>
                             </div>
                         </div>
                     </div>`
 
                 document.getElementById('divColegas').innerHTML = colegasDiv;
-                console.log(dados)
 
             })
     })

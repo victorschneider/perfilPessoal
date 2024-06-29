@@ -27,7 +27,7 @@ function montaPaginaRepo(){
                     <p>${new Date(repositorio.created_at).toLocaleDateString()}</p>
 
                     <h3 class="text-primary">Linguagem Principal:</h3>
-                    <p>${repositorio.language}</p>
+                    <p>${repositorio.language || "Linguagem não identificada"}</p>
 
                     <h3 class="text-primary">Link de Acesso</h3>
                     <p><a href="${repositorio.html_url}">Link do Github</a></p>
