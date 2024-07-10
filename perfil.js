@@ -46,17 +46,6 @@ function repositoriosGithub(){
     fetch(`${URL_perfil}/repos`)
         .then(res => res.json())
         .then(dados => {
-            let imagensRepo = [
-                "9c53d1ab-e135-4129-8e67-72d11dcfc3e4",
-                "0e50b5c2-8825-47aa-ab5d-622ef3d24385",
-                "8fab848a-e6c7-45dc-b07e-adff21a48b13",
-                "0754e2e4-7e25-4207-9afa-c2a70a91589a", 
-                "e38edd6d-f527-448a-beab-2a851bf2909a",
-                "65780eab-dfab-4ac5-a50d-fbb838a2caa4",
-                "584c5d57-d13c-47eb-80e3-5679664c6581"
-            ]
-
-            let i = 0;
 
             let repositorios = ''
             dados.forEach(repositorio => {
@@ -64,7 +53,7 @@ function repositoriosGithub(){
                     `<div class="col">
                         <div class="card">
                             <div class="card-body justify-content-between m-0 p-0">
-                                <img src="https://repository-images.githubusercontent.com/${repositorio.id}/${imagensRepo[i]}" class="w-100 p-0 m-0">
+                                <img src="https://github.com/victorschneider/${repositorio.name}/blob/main/${repositorio.name}.jpg?raw=true" class="w-100 p-0 m-0">
                             </div>
                             <div class="card-footer d-flex justify-content-between">
                                     <span>
@@ -89,9 +78,7 @@ function repositoriosGithub(){
                         </div>
                     </div>` 
                     
-                    i += 1;
             })
-                    i = 0;
 
             document.getElementById('Repositorios').innerHTML = repositorios;
         })
